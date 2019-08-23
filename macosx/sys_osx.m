@@ -418,7 +418,7 @@ void Sys_Init (void)
 	size_t			len;
     
     //Steam init
-    SteamAPI_Init();
+    //SteamAPI_Init();
     
 	
 	// detect OS version

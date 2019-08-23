@@ -306,11 +306,12 @@
 		76FFF26012AEEEC200C73834 /* wildcard.c in Sources */ = {isa = PBXBuildFile; fileRef = 76348B0E12A6CE0E008ADEB5 /* wildcard.c */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		A13F504E23107DA300105DC0 /* libsteam_api.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A13F504D23107DA300105DC0 /* libsteam_api.dylib */; };
-		A13F505023107DAE00105DC0 /* steamclient.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A13F504F23107DAE00105DC0 /* steamclient.dylib */; };
 		A13F5052231082AE00105DC0 /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13F5051231082AE00105DC0 /* libogg.a */; };
 		A13F5054231082FC00105DC0 /* libvorbis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13F5053231082FC00105DC0 /* libvorbis.a */; };
-		A13F50582310836600105DC0 /* libz.1.2.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A13F50572310836600105DC0 /* libz.1.2.11.dylib */; };
+		A13F505923108F2700105DC0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A13F50552310831D00105DC0 /* libz.tbd */; };
+		A13F50622310902900105DC0 /* miniz.c in Sources */ = {isa = PBXBuildFile; fileRef = A13F505B2310902900105DC0 /* miniz.c */; };
+		A13F50632310902900105DC0 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = A13F505C2310902900105DC0 /* unzip.c */; };
+		A13F50642310902900105DC0 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = A13F505D2310902900105DC0 /* ioapi.c */; };
 		D22A794F09F3CF3000FC9B21 /* Quake II Help idx in CopyFiles */ = {isa = PBXBuildFile; fileRef = D22A794709F3CEFE00FC9B21 /* Quake II Help idx */; };
 		D22A795009F3CF3100FC9B21 /* Quake II Help.helpindex in CopyFiles */ = {isa = PBXBuildFile; fileRef = D22A794809F3CEFE00FC9B21 /* Quake II Help.helpindex */; };
 		D22A795109F3CF3100FC9B21 /* Quake II Help.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = D22A794909F3CEFE00FC9B21 /* Quake II Help.html */; };
@@ -1146,7 +1147,14 @@
 		A13F5051231082AE00105DC0 /* libogg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libogg.a; path = libs/libogg.a; sourceTree = "<group>"; };
 		A13F5053231082FC00105DC0 /* libvorbis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvorbis.a; path = libs/libvorbis.a; sourceTree = "<group>"; };
 		A13F50552310831D00105DC0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/lib/libz.tbd; sourceTree = SYSTEM_DEVELOPER_DIR; };
-		A13F50572310836600105DC0 /* libz.1.2.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.11.dylib; path = libs/libz.1.2.11.dylib; sourceTree = "<group>"; };
+		A13F505B2310902900105DC0 /* miniz.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = miniz.c; sourceTree = "<group>"; };
+		A13F505C2310902900105DC0 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		A13F505D2310902900105DC0 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		A13F505E2310902900105DC0 /* miniz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = miniz.h; sourceTree = "<group>"; };
+		A13F505F2310902900105DC0 /* minizconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = minizconf.h; sourceTree = "<group>"; };
+		A13F50602310902900105DC0 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		A13F50612310902900105DC0 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		A13F506A231095DE00105DC0 /* libtier0_s.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtier0_s.dylib; path = libs/libtier0_s.dylib; sourceTree = "<group>"; };
 		D22A791A09F3CEFE00FC9B21 /* q2toc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = q2toc.jpg; sourceTree = "<group>"; };
 		D22A791B09F3CEFE00FC9B21 /* quake2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = quake2.gif; sourceTree = "<group>"; };
 		D22A791C09F3CEFE00FC9B21 /* spacer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spacer.gif; sourceTree = "<group>"; };
@@ -1390,7 +1398,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A13F505023107DAE00105DC0 /* steamclient.dylib in Frameworks */,
+				A13F505923108F2700105DC0 /* libz.tbd in Frameworks */,
 				76FFF18112AEE24B00C73834 /* OpenGL.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				D23874DB09E1BD9F00C1E540 /* ApplicationServices.framework in Frameworks */,
@@ -1401,8 +1409,6 @@
 				A13F5052231082AE00105DC0 /* libogg.a in Frameworks */,
 				76AED5EB13FB18BC008CF47A /* libpng.a in Frameworks */,
 				168708341602A26D00346877 /* libjpeg.a in Frameworks */,
-				A13F504E23107DA300105DC0 /* libsteam_api.dylib in Frameworks */,
-				A13F50582310836600105DC0 /* libz.1.2.11.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1509,7 +1515,7 @@
 		29B97314FDCFA39411CA2CEA /* Quake II */ = {
 			isa = PBXGroup;
 			children = (
-				A13F50572310836600105DC0 /* libz.1.2.11.dylib */,
+				A13F506A231095DE00105DC0 /* libtier0_s.dylib */,
 				A13F5053231082FC00105DC0 /* libvorbis.a */,
 				A13F5051231082AE00105DC0 /* libogg.a */,
 				A13F504F23107DAE00105DC0 /* steamclient.dylib */,
@@ -2324,6 +2330,20 @@
 			name = Headers;
 			sourceTree = "<group>";
 		};
+		A13F505A2310902900105DC0 /* unzip */ = {
+			isa = PBXGroup;
+			children = (
+				A13F505B2310902900105DC0 /* miniz.c */,
+				A13F505C2310902900105DC0 /* unzip.c */,
+				A13F505D2310902900105DC0 /* ioapi.c */,
+				A13F505E2310902900105DC0 /* miniz.h */,
+				A13F505F2310902900105DC0 /* minizconf.h */,
+				A13F50602310902900105DC0 /* unzip.h */,
+				A13F50612310902900105DC0 /* ioapi.h */,
+			);
+			path = unzip;
+			sourceTree = "<group>";
+		};
 		D22A791309F3CED800FC9B21 /* Help */ = {
 			isa = PBXGroup;
 			children = (
@@ -2490,6 +2510,7 @@
 		D238710809E1A2B700C1E540 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A13F505A2310902900105DC0 /* unzip */,
 				1687081B16029AB500346877 /* files.c */,
 				D238710D09E1A2DA00C1E540 /* Headers */,
 				D23871E909E1B69200C1E540 /* cmd.c */,
@@ -2508,21 +2529,21 @@
 		D238710B09E1A2BF00C1E540 /* MacOS X */ = {
 			isa = PBXGroup;
 			children = (
-				D238795709E1DAC100C1E540 /* Headers */,
+				D23871A109E1B5B500C1E540 /* cd_osx.m */,
 				D238710C09E1A2CD00C1E540 /* dl compatibility */,
 				D24531E609EB0FA7002AA1CB /* FDLinkView.m */,
 				D245322809EB148E002AA1CB /* FDModifierCheck.m */,
-				D23871A109E1B5B500C1E540 /* cd_osx.m */,
-				D23871A909E1B5D600C1E540 /* in_osx.m */,
 				D238728B09E1B82D00C1E540 /* glob.c */,
+				D238795709E1DAC100C1E540 /* Headers */,
+				D23871A909E1B5D600C1E540 /* in_osx.m */,
 				D23871AD09E1B5E400C1E540 /* net_udp.c */,
-				D23871B409E1B5F300C1E540 /* snddma_osx.c */,
-				D23871BA09E1B60400C1E540 /* sys_osx.m */,
+				D238728D09E1B82D00C1E540 /* q_shosx.c */,
 				D238794F09E1DAB600C1E540 /* Quake2.m */,
+				D238795109E1DAB600C1E540 /* Quake2Application.m */,
 				76A164E3132ECA49004960BA /* Quake2Console.m */,
 				D235F7DB09F0261300462FE6 /* Quake2Toolbar.m */,
-				D238795109E1DAB600C1E540 /* Quake2Application.m */,
-				D238728D09E1B82D00C1E540 /* q_shosx.c */,
+				D23871B409E1B5F300C1E540 /* snddma_osx.c */,
+				D23871BA09E1B60400C1E540 /* sys_osx.m */,
 				D23871C209E1B61700C1E540 /* vid_osx.m */,
 			);
 			name = "MacOS X";
@@ -3207,6 +3228,7 @@
 				D238726909E1B79A00C1E540 /* sv_world.c in Sources */,
 				D23871AA09E1B5D600C1E540 /* in_osx.m in Sources */,
 				D23871BB09E1B60400C1E540 /* sys_osx.m in Sources */,
+				A13F50622310902900105DC0 /* miniz.c in Sources */,
 				D23871C409E1B61700C1E540 /* vid_osx.m in Sources */,
 				D24531E809EB0FA7002AA1CB /* FDLinkView.m in Sources */,
 				D245322A09EB148E002AA1CB /* FDModifierCheck.m in Sources */,
@@ -3239,6 +3261,7 @@
 				76AFFD1A130F3921007D6E39 /* r_image.c in Sources */,
 				76AFFD1B130F3921007D6E39 /* r_light.c in Sources */,
 				76AFFD1C130F3921007D6E39 /* r_main.c in Sources */,
+				A13F50642310902900105DC0 /* ioapi.c in Sources */,
 				76AFFD1D130F3921007D6E39 /* r_misc.c in Sources */,
 				76AFFD1E130F3921007D6E39 /* r_model.c in Sources */,
 				76AFFD1F130F3921007D6E39 /* r_particle.c in Sources */,
@@ -3247,6 +3270,7 @@
 				76AFFD23130F3921007D6E39 /* r_vlights.c in Sources */,
 				76AFFD24130F3921007D6E39 /* r_warp.c in Sources */,
 				76A164E4132ECA49004960BA /* Quake2Console.m in Sources */,
+				A13F50632310902900105DC0 /* unzip.c in Sources */,
 				168707ED1602933000346877 /* ui_backend.c in Sources */,
 				168707EE1602933000346877 /* ui_game_credits.c in Sources */,
 				168707EF1602933000346877 /* ui_game_saveload.c in Sources */,
@@ -3478,6 +3502,7 @@
 				INSTALL_PATH = /usr/local/bin;
 				OBJROOT = "$(SYMROOT)";
 				PRODUCT_NAME = extractfuncs;
+				SDKROOT = macosx;
 				SYMROOT = build;
 			};
 			name = Debug;
@@ -3496,6 +3521,7 @@
 				INSTALL_PATH = /usr/local/bin;
 				OBJROOT = "$(SYMROOT)";
 				PRODUCT_NAME = extractfuncs;
+				SDKROOT = macosx;
 				SYMROOT = build;
 				ZERO_LINK = NO;
 			};
@@ -3523,6 +3549,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Rogue + Xatrix + Lazarus integrated game library";
 				PRODUCT_NAME = GameMac;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = kmq2plug;
 			};
 			name = Debug;
@@ -3548,6 +3575,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Rogue + Xatrix + Lazarus integrated game library";
 				PRODUCT_NAME = GameMac;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = kmq2plug;
 				ZERO_LINK = NO;
 			};
@@ -3579,6 +3607,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Zaero mission pack game library";
 				PRODUCT_NAME = GameMac;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = kmq2plug;
 			};
 			name = Debug;
@@ -3609,6 +3638,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Zaero mission pack game library";
 				PRODUCT_NAME = GameMac;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = kmq2plug;
 				ZERO_LINK = NO;
 			};
@@ -3640,6 +3670,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "3rd-Zigock Bot II game library";
 				PRODUCT_NAME = GameMac;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = kmq2plug;
 			};
 			name = Debug;
@@ -3670,6 +3701,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "3rd-Zigock Bot II game library";
 				PRODUCT_NAME = GameMac;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = kmq2plug;
 				ZERO_LINK = NO;
 			};
@@ -3819,7 +3851,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -3858,7 +3890,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -3889,7 +3921,7 @@
 				);
 				INSTALL_PATH = "$(HOME)/bin";
 				PRODUCT_NAME = Q2DedicatedServer;
-				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SDKROOT = macosx;
 				ZERO_LINK = NO;
 			};
 			name = Debug;
@@ -3908,7 +3940,7 @@
 				);
 				INSTALL_PATH = "$(HOME)/bin";
 				PRODUCT_NAME = Q2DedicatedServer;
-				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SDKROOT = macosx;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -3939,6 +3971,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Lazarus Quake II mod with Threewave/3Team CTF and ACE bot support";
 				PRODUCT_NAME = GameMac;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = kmq2plug;
 				ZERO_LINK = NO;
 			};
@@ -3968,6 +4001,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Lazarus Quake II mod with Threewave/3Team CTF and ACE bot support";
 				PRODUCT_NAME = GameMac;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = kmq2plug;
 				ZERO_LINK = NO;
 			};
@@ -3989,7 +4023,7 @@
 					ENABLE_MULTI_TEXTURE_EXT,
 					C_ONLY,
 				);
-				INFOPLIST_FILE = "GL Renderer Module-Info.plist";
+				INFOPLIST_FILE = "Info-GL Renderer Module.plist";
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -3998,6 +4032,7 @@
 					AppKit,
 				);
 				PRODUCT_NAME = ref_gl;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = q2plug;
 				ZERO_LINK = NO;
 			};
@@ -4026,6 +4061,7 @@
 					AppKit,
 				);
 				PRODUCT_NAME = ref_gl;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = q2plug;
 				ZERO_LINK = NO;
 			};
@@ -4052,7 +4088,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fruitz-of-dojo.quake2";
 				PRODUCT_NAME = "Read Me";
-				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -4077,7 +4113,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fruitz-of-dojo.quake2";
 				PRODUCT_NAME = "Read Me";
-				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};

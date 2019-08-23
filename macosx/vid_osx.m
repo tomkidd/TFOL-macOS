@@ -394,7 +394,7 @@ void	VID_Init (void)
     vid_ref 	    = Cvar_Get ("vid_ref",			"gl",	CVAR_ARCHIVE);	// Knightmare changed, was soft
     vid_xpos 	    = Cvar_Get ("vid_xpos",			"0",    CVAR_ARCHIVE);
     vid_ypos 	    = Cvar_Get ("vid_ypos",			"0",	CVAR_ARCHIVE);
-    vid_fullscreen  = Cvar_Get ("vid_fullscreen",	"1",    CVAR_ARCHIVE);
+    vid_fullscreen  = Cvar_Get ("vid_fullscreen",	"0",    CVAR_ARCHIVE);
     vid_gamma 	    = Cvar_Get ("vid_gamma",		"1",    CVAR_ARCHIVE);
     vid_minrefresh  = Cvar_Get ("vid_minrefresh",	"0",    CVAR_ARCHIVE);
     vid_maxrefresh  = Cvar_Get ("vid_maxrefresh",	"-1",	CVAR_ARCHIVE);
@@ -439,7 +439,7 @@ void	VID_Init (void)
 */               
     if (sys_windowed_mouse == NULL)
     {
-        sys_windowed_mouse = Cvar_Get( "sys_windowed_mouse", "0", CVAR_ARCHIVE );
+        sys_windowed_mouse = Cvar_Get( "sys_windowed_mouse", "1", CVAR_ARCHIVE );
     }
         
     // Add some console commands that we want to handle:
