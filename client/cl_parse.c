@@ -421,7 +421,7 @@ void CL_PlayBackgroundTrack (void)
 			if (FS_LoadFile(introname, NULL) <= -1)
 				strcpy (introname, name);
 
-			CDAudio_Stop();
+//            CDAudio_Stop();
 			S_StartBackgroundTrack(introname, name);
 			return;
 		}
@@ -431,7 +431,7 @@ void CL_PlayBackgroundTrack (void)
 
 	if (track == 0)
 	{	// Stop any playing track
-		CDAudio_Stop();
+//        CDAudio_Stop();
 		S_StopBackgroundTrack();
 		return;
 	}
@@ -444,7 +444,7 @@ void CL_PlayBackgroundTrack (void)
 	}
 	else
 	{
-		CDAudio_Play(track, true);
+//        CDAudio_Play(track, true);
 	}
 }
 

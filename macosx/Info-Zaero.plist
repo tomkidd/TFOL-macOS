@@ -9,7 +9,7 @@
 	<key>CFBundleGetInfoString</key>
 	<string>Zaero mission pack game library</string>
 	<key>CFBundleIdentifier</key>
-	<string>Zaero mission pack game library</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

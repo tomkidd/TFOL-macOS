@@ -9,7 +9,7 @@
 	<key>CFBundleGetInfoString</key>
 	<string>Lazarus Quake II mod with Threewave/3Team CTF and ACE bot support for KMQuake II v0.21; Copyright 2000-2010 by Mr. Hyde, Mad Dog, and Knightmare</string>
 	<key>CFBundleIdentifier</key>
-	<string>Lazarus Quake II mod with Threewave/3Team CTF and ACE bot support</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

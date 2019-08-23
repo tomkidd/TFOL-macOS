@@ -57,12 +57,12 @@ cvar_t *				m_yaw;
 cvar_t *				m_pitch;
 cvar_t *				m_forward;
 cvar_t *				freelook;
-static CGMouseDelta		gInMouseX;
-static CGMouseDelta		gInMouseY;
-static CGMouseDelta		gInMouseNewX;
-static CGMouseDelta		gInMouseNewY;
-static CGMouseDelta		gInMouseOldX;
-static CGMouseDelta		gInMouseOldY;
+static int32_t		gInMouseX;
+static int32_t		gInMouseY;
+static int32_t		gInMouseNewX;
+static int32_t		gInMouseNewY;
+static int32_t		gInMouseOldX;
+static int32_t		gInMouseOldY;
 
 UInt8					gInSpecialKey[] =	{
 													K_UPARROW, K_DOWNARROW,    K_LEFTARROW,  K_RIGHTARROW,
@@ -122,7 +122,7 @@ void			IN_SetKeyboardRepeatEnabled (BOOL theState);
 void			IN_SetF12EjectEnabled (qboolean theState);
 void			IN_ShowCursor (BOOL theState);
 void			IN_CenterCursor (void);
-void			IN_ReceiveMouseMove (CGMouseDelta theDeltaX, CGMouseDelta theDeltaY);
+void			IN_ReceiveMouseMove (int32_t theDeltaX, int32_t theDeltaY);
 
 static void		IN_SetMouseScalingEnabled (BOOL theState);
 static void 	IN_MLookDown_f (void);
@@ -458,7 +458,7 @@ void	IN_Frame (void)
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-void	IN_ReceiveMouseMove (CGMouseDelta theDeltaX, CGMouseDelta theDeltaY)
+void	IN_ReceiveMouseMove (int32_t theDeltaX, int32_t theDeltaY)
 {
     gInMouseNewX = theDeltaX;
     gInMouseNewY = theDeltaY;
@@ -525,7 +525,7 @@ void	IN_MouseEvent (UInt32 myMouseButtons, int sysMsgTime)
 // Knightmare- moved mouse movement here, to allow for other types of input in IN_Move
 void	IN_MouseMove (usercmd_t *cmd)
 {
-    CGMouseDelta	myMouseX = gInMouseNewX, myMouseY = gInMouseNewY;
+    int32_t	myMouseX = gInMouseNewX, myMouseY = gInMouseNewY;
 
 	if (!gInAutosensitivity)
 		gInAutosensitivity = Cvar_Get ("autosensitivity", "1", CVAR_ARCHIVE);

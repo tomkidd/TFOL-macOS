@@ -100,7 +100,7 @@ extern	void	Key_Event (int key, qboolean down, unsigned time);
 extern	void	IN_SetKeyboardRepeatEnabled (BOOL theState);
 extern	void	IN_SetF12EjectEnabled (qboolean theState);
 extern	void	IN_ShowCursor (BOOL theState);
-extern	void	IN_ReceiveMouseMove (CGMouseDelta theDeltaX, CGMouseDelta theDeltaY);
+extern	void	IN_ReceiveMouseMove (int32_t theDeltaX, int32_t theDeltaY);
 extern  BOOL	CDAudio_GetTrackList (void);
 extern	void	CDAudio_Enable (BOOL theState);
 extern qboolean	SNDDMA_ReserveBufferSize (void);
@@ -770,9 +770,9 @@ void	Sys_DoEvents (NSEvent *myEvent, NSEventType myType)
     
     static NSString	*	myKeyboardBuffer;
     static unichar		myCharacter;
-    static CGMouseDelta	myMouseDeltaX;
-	static CGMouseDelta	myMouseDeltaY;
-	static CGMouseDelta	myMouseWheel;
+    static int32_t	myMouseDeltaX;
+	static int32_t	myMouseDeltaY;
+	static int32_t	myMouseWheel;
     static UInt8		i;
     static UInt16		myKeyPad;
     static UInt32	 	myKeyboardBufferSize;

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		160B1A4016052E7E008D7495 /* zlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 769F26591309F047004BE875 /* zlib.a */; };
 		168707C016005AB900346877 /* g_abel_camshoot.c in Sources */ = {isa = PBXBuildFile; fileRef = 168707AC16005AAE00346877 /* g_abel_camshoot.c */; };
 		168707C116005AB900346877 /* g_abel_civspawner.c in Sources */ = {isa = PBXBuildFile; fileRef = 168707AD16005AAE00346877 /* g_abel_civspawner.c */; };
 		168707C216005AB900346877 /* g_abel_dancespawner.c in Sources */ = {isa = PBXBuildFile; fileRef = 168707AE16005AAE00346877 /* g_abel_dancespawner.c */; };
@@ -307,6 +306,11 @@
 		76FFF26012AEEEC200C73834 /* wildcard.c in Sources */ = {isa = PBXBuildFile; fileRef = 76348B0E12A6CE0E008ADEB5 /* wildcard.c */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		A13F504E23107DA300105DC0 /* libsteam_api.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A13F504D23107DA300105DC0 /* libsteam_api.dylib */; };
+		A13F505023107DAE00105DC0 /* steamclient.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A13F504F23107DAE00105DC0 /* steamclient.dylib */; };
+		A13F5052231082AE00105DC0 /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13F5051231082AE00105DC0 /* libogg.a */; };
+		A13F5054231082FC00105DC0 /* libvorbis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13F5053231082FC00105DC0 /* libvorbis.a */; };
+		A13F50582310836600105DC0 /* libz.1.2.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A13F50572310836600105DC0 /* libz.1.2.11.dylib */; };
 		D22A794F09F3CF3000FC9B21 /* Quake II Help idx in CopyFiles */ = {isa = PBXBuildFile; fileRef = D22A794709F3CEFE00FC9B21 /* Quake II Help idx */; };
 		D22A795009F3CF3100FC9B21 /* Quake II Help.helpindex in CopyFiles */ = {isa = PBXBuildFile; fileRef = D22A794809F3CEFE00FC9B21 /* Quake II Help.helpindex */; };
 		D22A795109F3CF3100FC9B21 /* Quake II Help.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = D22A794909F3CEFE00FC9B21 /* Quake II Help.html */; };
@@ -514,23 +518,18 @@
 		D23874DC09E1BD9F00C1E540 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23874DA09E1BD9F00C1E540 /* ApplicationServices.framework */; };
 		D23874EA09E1BDB800C1E540 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23874E909E1BDB800C1E540 /* CoreAudio.framework */; };
 		D23875CF09E1BDE100C1E540 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23875CE09E1BDE100C1E540 /* IOKit.framework */; };
-		D23875D109E1BDF700C1E540 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23875D009E1BDF700C1E540 /* QuickTime.framework */; };
 		D23875D409E1BE0E00C1E540 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23875D209E1BE0E00C1E540 /* OpenGL.framework */; };
 		D23877DE09E1C70A00C1E540 /* m_flash.c in Sources */ = {isa = PBXBuildFile; fileRef = D238732309E1BA2C00C1E540 /* m_flash.c */; };
 		D238780509E1C82200C1E540 /* cmd.c in Sources */ = {isa = PBXBuildFile; fileRef = D23871E909E1B69200C1E540 /* cmd.c */; };
 		D238780C09E1C82C00C1E540 /* cmodel.c in Sources */ = {isa = PBXBuildFile; fileRef = D23871EA09E1B69200C1E540 /* cmodel.c */; };
 		D238795309E1DAB600C1E540 /* Quake2.m in Sources */ = {isa = PBXBuildFile; fileRef = D238794F09E1DAB600C1E540 /* Quake2.m */; };
 		D238795509E1DAB600C1E540 /* Quake2Application.m in Sources */ = {isa = PBXBuildFile; fileRef = D238795109E1DAB600C1E540 /* Quake2Application.m */; };
-		D2452DFA09EAFAA1002AA1CB /* cd_osx.m in Sources */ = {isa = PBXBuildFile; fileRef = D23871A109E1B5B500C1E540 /* cd_osx.m */; };
 		D245318B09EB0BC2002AA1CB /* about.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D245318609EB0BC2002AA1CB /* about.tiff */; };
 		D245318C09EB0BC2002AA1CB /* cli.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D245318709EB0BC2002AA1CB /* cli.tiff */; };
 		D245318F09EB0BC2002AA1CB /* start.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D245318A09EB0BC2002AA1CB /* start.tiff */; };
 		D24531E809EB0FA7002AA1CB /* FDLinkView.m in Sources */ = {isa = PBXBuildFile; fileRef = D24531E609EB0FA7002AA1CB /* FDLinkView.m */; };
 		D24531F109EB1017002AA1CB /* HandCursor.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D24531F009EB1017002AA1CB /* HandCursor.tiff */; };
 		D245322A09EB148E002AA1CB /* FDModifierCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = D245322809EB148E002AA1CB /* FDModifierCheck.m */; };
-		DA3B05C316509A3D00046B18 /* libsteam_api.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3B05C016509A3D00046B18 /* libsteam_api.dylib */; };
-		DA3B05C416509A3D00046B18 /* libSteam.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3B05C116509A3D00046B18 /* libSteam.dylib */; };
-		DA3B05C516509A3D00046B18 /* steamclient.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3B05C216509A3D00046B18 /* steamclient.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -701,7 +700,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		168707AC16005AAE00346877 /* g_abel_camshoot.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = g_abel_camshoot.c; path = ../game/g_abel_camshoot.c; sourceTree = "<group>"; };
 		168707AD16005AAE00346877 /* g_abel_civspawner.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = g_abel_civspawner.c; path = ../game/g_abel_civspawner.c; sourceTree = "<group>"; };
@@ -773,7 +771,6 @@
 		76348B4712A6CFA7008ADEB5 /* vorbisfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vorbisfile.h; path = ../include/ogg/vorbisfile.h; sourceTree = SOURCE_ROOT; };
 		769EB5401315BE270044B690 /* acebot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = acebot.h; path = ../game/acebot.h; sourceTree = SOURCE_ROOT; };
 		769F25A31309EA13004BE875 /* libvorbisfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvorbisfile.a; path = libs/libvorbisfile.a; sourceTree = "<group>"; };
-		769F26591309F047004BE875 /* zlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = zlib.a; path = libs/zlib.a; sourceTree = "<group>"; };
 		76A164E1132EC992004960BA /* Quake2Console.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quake2Console.h; sourceTree = "<group>"; };
 		76A164E3132ECA49004960BA /* Quake2Console.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quake2Console.m; sourceTree = "<group>"; };
 		76A970BE12B2D72400489E62 /* kmq2.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = kmq2.icns; sourceTree = "<group>"; };
@@ -1137,6 +1134,19 @@
 		76FFF25C12AEEE3A00C73834 /* g_mmove_decs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = g_mmove_decs.h; path = ../game/g_mmove_decs.h; sourceTree = SOURCE_ROOT; };
 		76FFF25D12AEEE3A00C73834 /* g_mmove_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = g_mmove_list.h; path = ../game/g_mmove_list.h; sourceTree = SOURCE_ROOT; };
 		8D1107320486CEB800E47090 /* KMQuake II.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KMQuake II.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A13F50462310759100105DC0 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
+		A13F50472310759900105DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Base.lproj/Controller.nib; sourceTree = "<group>"; };
+		A13F50482310759E00105DC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		A13F50492310759E00105DC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A13F504A2310759E00105DC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.scriptTerminology; name = en; path = "en.lproj/Quake II.scriptTerminology"; sourceTree = "<group>"; };
+		A13F504B2310759E00105DC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
+		A13F504C231075A100105DC0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
+		A13F504D23107DA300105DC0 /* libsteam_api.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsteam_api.dylib; path = libs/libsteam_api.dylib; sourceTree = "<group>"; };
+		A13F504F23107DAE00105DC0 /* steamclient.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = steamclient.dylib; path = libs/steamclient.dylib; sourceTree = "<group>"; };
+		A13F5051231082AE00105DC0 /* libogg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libogg.a; path = libs/libogg.a; sourceTree = "<group>"; };
+		A13F5053231082FC00105DC0 /* libvorbis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvorbis.a; path = libs/libvorbis.a; sourceTree = "<group>"; };
+		A13F50552310831D00105DC0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/lib/libz.tbd; sourceTree = SYSTEM_DEVELOPER_DIR; };
+		A13F50572310836600105DC0 /* libz.1.2.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.11.dylib; path = libs/libz.1.2.11.dylib; sourceTree = "<group>"; };
 		D22A791A09F3CEFE00FC9B21 /* q2toc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = q2toc.jpg; sourceTree = "<group>"; };
 		D22A791B09F3CEFE00FC9B21 /* quake2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = quake2.gif; sourceTree = "<group>"; };
 		D22A791C09F3CEFE00FC9B21 /* spacer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spacer.gif; sourceTree = "<group>"; };
@@ -1322,15 +1332,9 @@
 		D238737009E1BABC00C1E540 /* glimp_osx.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = glimp_osx.m; sourceTree = "<group>"; };
 		D238737109E1BABC00C1E540 /* qgl_osx.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = qgl_osx.c; sourceTree = "<group>"; };
 		D23873B509E1BB9A00C1E540 /* readme.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = readme.m; sourceTree = "<group>"; };
-		D23873BC09E1BC1900C1E540 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Controller.nib; sourceTree = "<group>"; };
-		D23873BE09E1BC1A00C1E540 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		D23873D009E1BC6D00C1E540 /* plug-in.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "plug-in.icns"; sourceTree = "<group>"; };
 		D23873D809E1BC8C00C1E540 /* ReadMe.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ReadMe.icns; sourceTree = "<group>"; };
 		D23873E109E1BCB500C1E540 /* Quake II.scriptSuite */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = "Quake II.scriptSuite"; sourceTree = "<group>"; };
-		D23873E409E1BCCA00C1E540 /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = English; path = "English.lproj/Quake II.scriptTerminology"; sourceTree = "<group>"; };
-		D23873E609E1BCCA00C1E540 /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
-		D23873EB09E1BCDF00C1E540 /* German */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
-		D23873EC09E1BCE400C1E540 /* Swedish */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Swedish; path = Swedish.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
 		D23874DA09E1BD9F00C1E540 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
 		D23874E909E1BDB800C1E540 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
 		D23875CE09E1BDE100C1E540 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
@@ -1351,9 +1355,6 @@
 		D24531F009EB1017002AA1CB /* HandCursor.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = HandCursor.tiff; sourceTree = "<group>"; };
 		D245322709EB148E002AA1CB /* FDModifierCheck.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FDModifierCheck.h; sourceTree = "<group>"; };
 		D245322809EB148E002AA1CB /* FDModifierCheck.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FDModifierCheck.m; sourceTree = "<group>"; };
-		DA3B05C016509A3D00046B18 /* libsteam_api.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsteam_api.dylib; path = ../../libraries/libsteam_api.dylib; sourceTree = "<group>"; };
-		DA3B05C116509A3D00046B18 /* libSteam.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSteam.dylib; path = ../../libraries/libSteam.dylib; sourceTree = "<group>"; };
-		DA3B05C216509A3D00046B18 /* steamclient.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = steamclient.dylib; path = ../../libraries/steamclient.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1389,19 +1390,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA3B05C316509A3D00046B18 /* libsteam_api.dylib in Frameworks */,
-				DA3B05C416509A3D00046B18 /* libSteam.dylib in Frameworks */,
-				DA3B05C516509A3D00046B18 /* steamclient.dylib in Frameworks */,
+				A13F505023107DAE00105DC0 /* steamclient.dylib in Frameworks */,
 				76FFF18112AEE24B00C73834 /* OpenGL.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				D23874DB09E1BD9F00C1E540 /* ApplicationServices.framework in Frameworks */,
 				D23874EA09E1BDB800C1E540 /* CoreAudio.framework in Frameworks */,
 				D23875CF09E1BDE100C1E540 /* IOKit.framework in Frameworks */,
-				D23875D109E1BDF700C1E540 /* QuickTime.framework in Frameworks */,
+				A13F5054231082FC00105DC0 /* libvorbis.a in Frameworks */,
 				769F25A61309EA14004BE875 /* libvorbisfile.a in Frameworks */,
+				A13F5052231082AE00105DC0 /* libogg.a in Frameworks */,
 				76AED5EB13FB18BC008CF47A /* libpng.a in Frameworks */,
 				168708341602A26D00346877 /* libjpeg.a in Frameworks */,
-				160B1A4016052E7E008D7495 /* zlib.a in Frameworks */,
+				A13F504E23107DA300105DC0 /* libsteam_api.dylib in Frameworks */,
+				A13F50582310836600105DC0 /* libz.1.2.11.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1508,12 +1509,13 @@
 		29B97314FDCFA39411CA2CEA /* Quake II */ = {
 			isa = PBXGroup;
 			children = (
-				DA3B05C016509A3D00046B18 /* libsteam_api.dylib */,
-				DA3B05C116509A3D00046B18 /* libSteam.dylib */,
-				DA3B05C216509A3D00046B18 /* steamclient.dylib */,
+				A13F50572310836600105DC0 /* libz.1.2.11.dylib */,
+				A13F5053231082FC00105DC0 /* libvorbis.a */,
+				A13F5051231082AE00105DC0 /* libogg.a */,
+				A13F504F23107DAE00105DC0 /* steamclient.dylib */,
+				A13F504D23107DA300105DC0 /* libsteam_api.dylib */,
 				76AED5EA13FB18BC008CF47A /* libpng.a */,
 				76AFFDED130F4120007D6E39 /* libjpeg.a */,
-				769F26591309F047004BE875 /* zlib.a */,
 				769F25A31309EA13004BE875 /* libvorbisfile.a */,
 				080E96DDFE201D6D7F000001 /* Sourcecode */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -1549,6 +1551,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A13F50552310831D00105DC0 /* libz.tbd */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
@@ -2849,16 +2852,20 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Quake II" */;
 			compatibilityVersion = "Xcode 2.4";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
-				Swedish,
+				sv,
+				ja,
+				Base,
+				en,
+				de,
+				fr,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Quake II */;
 			projectDirPath = "";
@@ -3198,7 +3205,6 @@
 				D238726709E1B79A00C1E540 /* sv_send.c in Sources */,
 				D238726809E1B79A00C1E540 /* sv_user.c in Sources */,
 				D238726909E1B79A00C1E540 /* sv_world.c in Sources */,
-				D2452DFA09EAFAA1002AA1CB /* cd_osx.m in Sources */,
 				D23871AA09E1B5D600C1E540 /* in_osx.m in Sources */,
 				D23871BB09E1B60400C1E540 /* sys_osx.m in Sources */,
 				D23871C409E1B61700C1E540 /* vid_osx.m in Sources */,
@@ -3416,7 +3422,7 @@
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				089C165DFE840E0CC02AAC07 /* English */,
+				A13F50492310759E00105DC0 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -3424,7 +3430,7 @@
 		D23873BB09E1BC1900C1E540 /* Controller.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D23873BC09E1BC1900C1E540 /* English */,
+				A13F50472310759900105DC0 /* Base */,
 			);
 			name = Controller.nib;
 			sourceTree = "<group>";
@@ -3432,7 +3438,7 @@
 		D23873BD09E1BC1A00C1E540 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D23873BE09E1BC1A00C1E540 /* English */,
+				A13F50482310759E00105DC0 /* en */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
@@ -3440,7 +3446,7 @@
 		D23873E309E1BCCA00C1E540 /* Quake II.scriptTerminology */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D23873E409E1BCCA00C1E540 /* English */,
+				A13F504A2310759E00105DC0 /* en */,
 			);
 			name = "Quake II.scriptTerminology";
 			sourceTree = "<group>";
@@ -3448,9 +3454,9 @@
 		D23873E509E1BCCA00C1E540 /* ServicesMenu.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D23873E609E1BCCA00C1E540 /* English */,
-				D23873EB09E1BCDF00C1E540 /* German */,
-				D23873EC09E1BCE400C1E540 /* Swedish */,
+				A13F50462310759100105DC0 /* sv */,
+				A13F504B2310759E00105DC0 /* en */,
+				A13F504C231075A100105DC0 /* de */,
 			);
 			name = ServicesMenu.strings;
 			sourceTree = "<group>";
@@ -3462,16 +3468,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = SCREWUP;
 				INSTALL_PATH = /usr/local/bin;
 				OBJROOT = "$(SYMROOT)";
-				PREBINDING = NO;
 				PRODUCT_NAME = extractfuncs;
 				SYMROOT = build;
 			};
@@ -3481,16 +3486,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PREPROCESSOR_DEFINITIONS = SCREWUP;
 				GCC_VERSION_ppc = 4.0;
 				INSTALL_PATH = /usr/local/bin;
 				OBJROOT = "$(SYMROOT)";
-				PREBINDING = NO;
 				PRODUCT_NAME = extractfuncs;
 				SYMROOT = build;
 				ZERO_LINK = NO;
@@ -3501,10 +3505,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/missionpack";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -3517,7 +3521,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "Rogue + Xatrix + Lazarus integrated game library";
 				PRODUCT_NAME = GameMac;
 				WRAPPER_EXTENSION = kmq2plug;
 			};
@@ -3527,10 +3531,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/missionpack";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
@@ -3542,7 +3546,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "Rogue + Xatrix + Lazarus integrated game library";
 				PRODUCT_NAME = GameMac;
 				WRAPPER_EXTENSION = kmq2plug;
 				ZERO_LINK = NO;
@@ -3553,10 +3557,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/zaero";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -3573,7 +3577,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "Zaero mission pack game library";
 				PRODUCT_NAME = GameMac;
 				WRAPPER_EXTENSION = kmq2plug;
 			};
@@ -3583,10 +3587,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/zaero";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -3603,7 +3607,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "Zaero mission pack game library";
 				PRODUCT_NAME = GameMac;
 				WRAPPER_EXTENSION = kmq2plug;
 				ZERO_LINK = NO;
@@ -3614,10 +3618,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/3zb2";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -3634,7 +3638,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "3rd-Zigock Bot II game library";
 				PRODUCT_NAME = GameMac;
 				WRAPPER_EXTENSION = kmq2plug;
 			};
@@ -3644,10 +3648,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/3zb2";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -3664,7 +3668,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "3rd-Zigock Bot II game library";
 				PRODUCT_NAME = GameMac;
 				WRAPPER_EXTENSION = kmq2plug;
 				ZERO_LINK = NO;
@@ -3674,9 +3678,9 @@
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -3704,6 +3708,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(PROJECT_DIR)/libs",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/libs\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10 = "\"$(SRCROOT)/libs\"";
@@ -3718,14 +3723,16 @@
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7 = "\"$(SRCROOT)/libs\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8 = "\"$(SRCROOT)/libs\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9 = "\"$(SRCROOT)/libs\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.knightmare.kmquake2;
 				PRODUCT_NAME = "KMQuake II";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -3734,10 +3741,8 @@
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -3765,6 +3770,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(PROJECT_DIR)/libs",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../usr/local/lib\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/libs\"";
@@ -3779,9 +3785,11 @@
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7 = "\"$(SRCROOT)/libs\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8 = "\"$(SRCROOT)/libs\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9 = "\"$(SRCROOT)/../../libraries\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.knightmare.kmquake2;
 				PRODUCT_NAME = "KMQuake II";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -3790,12 +3798,37 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_PKGINFO_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PREBINDING = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				SHARED_PRECOMPS_DIR = "";
@@ -3805,12 +3838,35 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_PKGINFO_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PREBINDING = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				SHARED_PRECOMPS_DIR = "";
@@ -3820,9 +3876,9 @@
 		D238714809E1B46600C1E540 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -3832,7 +3888,6 @@
 					C_ONLY,
 				);
 				INSTALL_PATH = "$(HOME)/bin";
-				PREBINDING = NO;
 				PRODUCT_NAME = Q2DedicatedServer;
 				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
 				ZERO_LINK = NO;
@@ -3842,8 +3897,8 @@
 		D238714909E1B46600C1E540 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -3852,7 +3907,6 @@
 					C_ONLY,
 				);
 				INSTALL_PATH = "$(HOME)/bin";
-				PREBINDING = NO;
 				PRODUCT_NAME = Q2DedicatedServer;
 				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
 				ZERO_LINK = NO;
@@ -3862,10 +3916,10 @@
 		D238717209E1B50E00C1E540 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/lazarus";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -3883,7 +3937,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "Lazarus Quake II mod with Threewave/3Team CTF and ACE bot support";
 				PRODUCT_NAME = GameMac;
 				WRAPPER_EXTENSION = kmq2plug;
 				ZERO_LINK = NO;
@@ -3893,9 +3947,9 @@
 		D238717309E1B50E00C1E540 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/lazarus";
 				COPY_PHASE_STRIP = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -3912,7 +3966,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "Lazarus Quake II mod with Threewave/3Team CTF and ACE bot support";
 				PRODUCT_NAME = GameMac;
 				WRAPPER_EXTENSION = kmq2plug;
 				ZERO_LINK = NO;
@@ -3922,9 +3976,9 @@
 		D238717509E1B50E00C1E540 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -3943,7 +3997,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ref_gl;
 				WRAPPER_EXTENSION = q2plug;
 				ZERO_LINK = NO;
@@ -3953,8 +4006,8 @@
 		D238717609E1B50E00C1E540 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -3972,7 +4025,6 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ref_gl;
 				WRAPPER_EXTENSION = q2plug;
 				ZERO_LINK = NO;
@@ -3982,9 +4034,9 @@
 		D238718A09E1B54800C1E540 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -3998,7 +4050,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fruitz-of-dojo.quake2";
 				PRODUCT_NAME = "Read Me";
 				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
 				WRAPPER_EXTENSION = app;
@@ -4009,8 +4061,8 @@
 		D238718B09E1B54800C1E540 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -4023,7 +4075,7 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fruitz-of-dojo.quake2";
 				PRODUCT_NAME = "Read Me";
 				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
 				WRAPPER_EXTENSION = app;

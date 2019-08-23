@@ -78,7 +78,7 @@
 #pragma mark TypeDefs
 
 typedef struct		{
-                                CGTableCount		count;
+                                uint32_t		count;
                                 CGGammaValue		red[CG_MAX_GAMMA_TABLE_SIZE];
                                 CGGammaValue		green[CG_MAX_GAMMA_TABLE_SIZE];
                                 CGGammaValue		blue[CG_MAX_GAMMA_TABLE_SIZE];
@@ -621,21 +621,21 @@ void	GLimp_SetTruform (void)
             }
             
             // enable pn_triangles. lightning required due to a bug of OpenGL!
-            qglEnable (GL_PN_TRIANGLES_ATIX);
+            qglEnable (GL_PN_TRIANGLES_ATI);
             qglEnable (GL_LIGHTING);
             qglLightModelfv (GL_LIGHT_MODEL_AMBIENT, gGLTruformAmbient);
             qglEnable (GL_COLOR_MATERIAL);
         
             // point mode:
             //qglPNTrianglesiATIX (GL_PN_TRIANGLES_POINT_MODE_ATIX, GL_PN_TRIANGLES_POINT_MODE_LINEAR_ATIX);
-            qglPNTrianglesiATIX (GL_PN_TRIANGLES_POINT_MODE_ATIX, GL_PN_TRIANGLES_POINT_MODE_CUBIC_ATIX);
-            
+            qglPNTrianglesiATIX (GL_PN_TRIANGLES_POINT_MODE_ATI, GL_PN_TRIANGLES_POINT_MODE_CUBIC_ATI);
+
             // normal mode (no normals used at all by Quake):
             //qglPNTrianglesiATIX (GL_PN_TRIANGLES_NORMAL_MODE_ATIX, GL_PN_TRIANGLES_NORMAL_MODE_LINEAR_ATIX);
-            qglPNTrianglesiATIX (GL_PN_TRIANGLES_NORMAL_MODE_ATIX, GL_PN_TRIANGLES_NORMAL_MODE_QUADRATIC_ATIX);
-        
+            qglPNTrianglesiATIX (GL_PN_TRIANGLES_NORMAL_MODE_ATI, GL_PN_TRIANGLES_NORMAL_MODE_QUADRATIC_ATI);
+
             // tesselation level:
-            qglPNTrianglesiATIX (GL_PN_TRIANGLES_TESSELATION_LEVEL_ATIX, myPNTriangleLevel);
+            qglPNTrianglesiATIX (GL_PN_TRIANGLES_TESSELATION_LEVEL_ATI, myPNTriangleLevel);
         }
         else
         {
@@ -644,7 +644,7 @@ void	GLimp_SetTruform (void)
                 myPNTriangleLevel = -1;
                 Cvar_SetValue ("gl_truform", myPNTriangleLevel);
             }
-            qglDisable (GL_PN_TRIANGLES_ATIX);
+            qglDisable (GL_PN_TRIANGLES_ATI);
             qglDisable (GL_LIGHTING);
         }
         gGLTrufomTesselationLevel->modified = NO;
@@ -1022,18 +1022,18 @@ void	GLimp_AppActivate (qboolean active)
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-@implementation NSOpenGLContext (CGLContextAccess)
-
-//------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-- (CGLContextObj) cglContext;
-{
-    return (_contextAuxiliary);
-}
-
-@end
-
-#pragma mark -
+//@implementation NSOpenGLContext (CGLContextAccess)
+//
+////------------------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//- (CGLContextObj) cglContext;
+//{
+//    return (_contextAuxiliary);
+//}
+//
+//@end
+//
+//#pragma mark -
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------------
 

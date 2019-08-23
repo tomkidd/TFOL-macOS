@@ -19,7 +19,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import <CoreAudio/AudioHardware.h>
-#import <QuickTime/QuickTime.h>
+//#import <QuickTime/QuickTime.h>
 #import <sys/mount.h>
 #import <pthread.h>
 
@@ -42,7 +42,7 @@ static NSMutableArray *		gCDTrackList;
 static char					gCDDevice[MAX_OSPATH];
 static BOOL					gCDLoop;
 static BOOL					gCDNextTrack;
-static Movie				gCDController = NULL;
+//static Movie                gCDController = NULL;
 
 #pragma mark -
 
@@ -54,7 +54,7 @@ BOOL				CDAudio_GetTrackList (void);
 void				CDAudio_Enable (BOOL theState);
 
 static	void		CDAudio_Error (cderror_t theErrorNumber);
-static	SInt32		CDAudio_StripVideoTracks (Movie theMovie);
+//static    SInt32        CDAudio_StripVideoTracks (Movie theMovie);
 static	void		CDAudio_SafePath (const char *thePath);
 static	void		CDAudio_AddTracks2List (NSString *theMountPath, NSArray *theExtensions);
 static 	void 		CD_f (void);
@@ -126,25 +126,25 @@ void	CDAudio_Error (cderror_t theErrorNumber)
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-SInt32	CDAudio_StripVideoTracks (Movie theMovie)
-{
-	SInt64	i = GetMovieTrackCount (theMovie);
-
-    for (; i >= 1; i--)
-    {
-        Track		myCurTrack = GetMovieIndTrack (theMovie, i);
-		 OSType 	myMediaType;
-		 
-        GetMediaHandlerDescription (GetTrackMedia (myCurTrack), &myMediaType, NULL, NULL);
-		
-        if (myMediaType != SoundMediaType && myMediaType != MusicMediaType)
-        {
-            DisposeMovieTrack (myCurTrack);
-        }
-    }
-
-    return (GetMovieTrackCount (theMovie));
-}
+//SInt32    CDAudio_StripVideoTracks (Movie theMovie)
+//{
+//    SInt64    i = GetMovieTrackCount (theMovie);
+//
+//    for (; i >= 1; i--)
+//    {
+//        Track        myCurTrack = GetMovieIndTrack (theMovie, i);
+//         OSType     myMediaType;
+//
+//        GetMediaHandlerDescription (GetTrackMedia (myCurTrack), &myMediaType, NULL, NULL);
+//
+//        if (myMediaType != SoundMediaType && myMediaType != MusicMediaType)
+//        {
+//            DisposeMovieTrack (myCurTrack);
+//        }
+//    }
+//
+//    return (GetMovieTrackCount (theMovie));
+//}
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -173,24 +173,24 @@ void	CDAudio_AddTracks2List (NSString *theMountPath, NSArray *theExtensions)
                         NSString *	myFullPath	= [theMountPath stringByAppendingPathComponent: myFilePath];
                         NSURL *		myMoviePath	= [NSURL fileURLWithPath: myFullPath];
                         NSMovie	*	myMovie		= [[NSMovie alloc] initWithURL: myMoviePath byReference: YES];
-						Movie		myQTMovie	= [myMovie QTMovie];
-						
-						if (myQTMovie != nil)
-						{
-							// add only movies with audiotacks and use only the audio track:
-							if (CDAudio_StripVideoTracks (myQTMovie) > 0)
-							{
-								[gCDTrackList addObject: myMovie];
-							}
-							else
-							{
-								CDAudio_Error (CDERR_AUDIO_DATA);
-							}
-						}
-						else
-						{
-							CDAudio_Error (CDERR_MOVIE_DATA);
-						}
+//                        Movie        myQTMovie    = [myMovie QTMovie];
+//
+//                        if (myQTMovie != nil)
+//                        {
+//                            // add only movies with audiotacks and use only the audio track:
+//                            if (CDAudio_StripVideoTracks (myQTMovie) > 0)
+//                            {
+//                                [gCDTrackList addObject: myMovie];
+//                            }
+//                            else
+//                            {
+//                                CDAudio_Error (CDERR_AUDIO_DATA);
+//                            }
+//                        }
+//                        else
+//                        {
+//                            CDAudio_Error (CDERR_MOVIE_DATA);
+//                        }
                     }
                 }
             }

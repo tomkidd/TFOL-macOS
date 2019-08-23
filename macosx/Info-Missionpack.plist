@@ -9,7 +9,7 @@
 	<key>CFBundleGetInfoString</key>
 	<string>Rogue + Xatrix + Lazarus integrated game library</string>
 	<key>CFBundleIdentifier</key>
-	<string>Rogue + Xatrix + Lazarus integrated game library</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

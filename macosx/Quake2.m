@@ -203,7 +203,7 @@
 
 		IN_SetKeyboardRepeatEnabled (NO);
 		IN_SetF12EjectEnabled (NO);
-		CDAudio_Enable (YES);
+//        CDAudio_Enable (YES);
 		VID_SetPaused (NO);
 		
 		CGPostKeyboardEvent ((CGCharCode) 0, (CGKeyCode) 55, NO);	// CMD
@@ -227,7 +227,7 @@
 		IN_ShowCursor (YES);
 		IN_SetKeyboardRepeatEnabled (YES);
 		IN_SetF12EjectEnabled (YES);
-		CDAudio_Enable (NO);
+//        CDAudio_Enable (NO);
 		VID_SetPaused (YES);
 	}
 	
@@ -702,7 +702,7 @@
     SYS_Q2_DURING
     {
         // scan for media files:
-        CDAudio_GetTrackList ();
+//        CDAudio_GetTrackList ();
         
         // post a notification to the main thread:
         [[NSDistributedNotificationCenter defaultCenter] postNotificationName: @"Fire Frame Timer" object: NULL];
