@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>GameMac</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Rogue + Xatrix + Lazarus integrated game library</string>
+	<key>CFBundleIdentifier</key>
+	<string>Rogue + Xatrix + Lazarus integrated game library</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>GameMacOSX</string>
+	<key>CFBundlePackageType</key>
+	<string>q2pl</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.980</string>
+	<key>CFBundleSignature</key>
+	<string>Qua2</string>
+	<key>CFBundleVersion</key>
+	<string>0.9.8</string>
+</dict>
+</plist>
