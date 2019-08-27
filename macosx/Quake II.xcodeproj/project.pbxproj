@@ -52,7 +52,6 @@
 		1687083116029FC300346877 /* acebot_movement.c in Sources */ = {isa = PBXBuildFile; fileRef = 1687082316029FA800346877 /* acebot_movement.c */; };
 		1687083216029FC300346877 /* acebot_nodes.c in Sources */ = {isa = PBXBuildFile; fileRef = 1687082416029FA800346877 /* acebot_nodes.c */; };
 		1687083316029FC300346877 /* acebot_spawn.c in Sources */ = {isa = PBXBuildFile; fileRef = 1687082516029FA800346877 /* acebot_spawn.c */; };
-		168708341602A26D00346877 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76AFFDED130F4120007D6E39 /* libjpeg.a */; };
 		76348B0F12A6CE0E008ADEB5 /* wildcard.c in Sources */ = {isa = PBXBuildFile; fileRef = 76348B0E12A6CE0E008ADEB5 /* wildcard.c */; };
 		76348B2012A6CE7E008ADEB5 /* cl_cinematic.c in Sources */ = {isa = PBXBuildFile; fileRef = 76348B1F12A6CE7E008ADEB5 /* cl_cinematic.c */; };
 		76348B2212A6CE8A008ADEB5 /* cl_download.c in Sources */ = {isa = PBXBuildFile; fileRef = 76348B2112A6CE8A008ADEB5 /* cl_download.c */; };
@@ -66,7 +65,6 @@
 		769F25A61309EA14004BE875 /* libvorbisfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 769F25A31309EA13004BE875 /* libvorbisfile.a */; };
 		76A164E4132ECA49004960BA /* Quake2Console.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A164E3132ECA49004960BA /* Quake2Console.m */; };
 		76A970BF12B2D72400489E62 /* kmq2.icns in Resources */ = {isa = PBXBuildFile; fileRef = 76A970BE12B2D72400489E62 /* kmq2.icns */; };
-		76AED5EB13FB18BC008CF47A /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76AED5EA13FB18BC008CF47A /* libpng.a */; };
 		76AF68C013E208F0000DE94B /* extractfuncs.c in Sources */ = {isa = PBXBuildFile; fileRef = 76AF68BB13E208F0000DE94B /* extractfuncs.c */; };
 		76AF68C113E208F0000DE94B /* l_log.c in Sources */ = {isa = PBXBuildFile; fileRef = 76AF68BC13E208F0000DE94B /* l_log.c */; };
 		76AF68C213E208F0000DE94B /* l_memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 76AF68BD13E208F0000DE94B /* l_memory.c */; };
@@ -312,6 +310,11 @@
 		A13F50622310902900105DC0 /* miniz.c in Sources */ = {isa = PBXBuildFile; fileRef = A13F505B2310902900105DC0 /* miniz.c */; };
 		A13F50632310902900105DC0 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = A13F505C2310902900105DC0 /* unzip.c */; };
 		A13F50642310902900105DC0 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = A13F505D2310902900105DC0 /* ioapi.c */; };
+		A1BEC731231489EB00CC9E03 /* baseq2 in Resources */ = {isa = PBXBuildFile; fileRef = A1BEC730231489EB00CC9E03 /* baseq2 */; };
+		A1BEC73F23159AAF00CC9E03 /* libjpeg.62.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1BEC73C23159A8C00CC9E03 /* libjpeg.62.dylib */; };
+		A1BEC74023159AB700CC9E03 /* libjpeg.62.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = A1BEC73C23159A8C00CC9E03 /* libjpeg.62.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A1BEC7432315A1A700CC9E03 /* libpng12.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = A1BEC7422315A1A700CC9E03 /* libpng12.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A1BEC7442315A1BA00CC9E03 /* libpng12.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1BEC7422315A1A700CC9E03 /* libpng12.0.dylib */; };
 		D22A794F09F3CF3000FC9B21 /* Quake II Help idx in CopyFiles */ = {isa = PBXBuildFile; fileRef = D22A794709F3CEFE00FC9B21 /* Quake II Help idx */; };
 		D22A795009F3CF3100FC9B21 /* Quake II Help.helpindex in CopyFiles */ = {isa = PBXBuildFile; fileRef = D22A794809F3CEFE00FC9B21 /* Quake II Help.helpindex */; };
 		D22A795109F3CF3100FC9B21 /* Quake II Help.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = D22A794909F3CEFE00FC9B21 /* Quake II Help.html */; };
@@ -534,6 +537,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		A1BEC74123159AB700CC9E03 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A1BEC74023159AB700CC9E03 /* libjpeg.62.dylib in Embed Libraries */,
+				A1BEC7432315A1A700CC9E03 /* libpng12.0.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D22A794A09F3CF1500FC9B21 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -775,7 +790,6 @@
 		76A164E1132EC992004960BA /* Quake2Console.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quake2Console.h; sourceTree = "<group>"; };
 		76A164E3132ECA49004960BA /* Quake2Console.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quake2Console.m; sourceTree = "<group>"; };
 		76A970BE12B2D72400489E62 /* kmq2.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = kmq2.icns; sourceTree = "<group>"; };
-		76AED5EA13FB18BC008CF47A /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = libs/libpng.a; sourceTree = "<group>"; };
 		76AF68AF13E207B2000DE94B /* extractfuncs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = extractfuncs; sourceTree = BUILT_PRODUCTS_DIR; };
 		76AF68B613E208E1000DE94B /* ef_local.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ef_local.h; path = ../extractfuncs/ef_local.h; sourceTree = SOURCE_ROOT; };
 		76AF68B713E208E1000DE94B /* l_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = l_log.h; path = ../extractfuncs/l_log.h; sourceTree = SOURCE_ROOT; };
@@ -807,7 +821,6 @@
 		76AFFD0B130F3921007D6E39 /* r_sprite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = r_sprite.c; path = ../renderer/r_sprite.c; sourceTree = SOURCE_ROOT; };
 		76AFFD0D130F3921007D6E39 /* r_vlights.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = r_vlights.c; path = ../renderer/r_vlights.c; sourceTree = SOURCE_ROOT; };
 		76AFFD0E130F3921007D6E39 /* r_warp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = r_warp.c; path = ../renderer/r_warp.c; sourceTree = SOURCE_ROOT; };
-		76AFFDED130F4120007D6E39 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = libs/libjpeg.a; sourceTree = "<group>"; };
 		76B26D651345471000AA5C67 /* GameMac.kmq2plug */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameMac.kmq2plug; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B26D721345498100AA5C67 /* p_menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = p_menu.h; path = ../missionpack/p_menu.h; sourceTree = SOURCE_ROOT; };
 		76B26D731345498100AA5C67 /* p_text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = p_text.h; path = ../missionpack/p_text.h; sourceTree = SOURCE_ROOT; };
@@ -1155,6 +1168,10 @@
 		A13F50602310902900105DC0 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
 		A13F50612310902900105DC0 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
 		A13F506A231095DE00105DC0 /* libtier0_s.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtier0_s.dylib; path = libs/libtier0_s.dylib; sourceTree = "<group>"; };
+		A1BEC730231489EB00CC9E03 /* baseq2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = baseq2; path = ../../../Dropbox/Files/quake2/tfol/baseq2; sourceTree = "<group>"; };
+		A1BEC7362315762000CC9E03 /* libjpeg.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjpeg.9.dylib; path = ../../../../../usr/local/Cellar/jpeg/9c/lib/libjpeg.9.dylib; sourceTree = "<group>"; };
+		A1BEC73C23159A8C00CC9E03 /* libjpeg.62.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjpeg.62.dylib; path = libs/libjpeg.62.dylib; sourceTree = "<group>"; };
+		A1BEC7422315A1A700CC9E03 /* libpng12.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng12.0.dylib; path = libs/libpng12.0.dylib; sourceTree = "<group>"; };
 		D22A791A09F3CEFE00FC9B21 /* q2toc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = q2toc.jpg; sourceTree = "<group>"; };
 		D22A791B09F3CEFE00FC9B21 /* quake2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = quake2.gif; sourceTree = "<group>"; };
 		D22A791C09F3CEFE00FC9B21 /* spacer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spacer.gif; sourceTree = "<group>"; };
@@ -1398,6 +1415,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1BEC7442315A1BA00CC9E03 /* libpng12.0.dylib in Frameworks */,
+				A1BEC73F23159AAF00CC9E03 /* libjpeg.62.dylib in Frameworks */,
 				A13F505923108F2700105DC0 /* libz.tbd in Frameworks */,
 				76FFF18112AEE24B00C73834 /* OpenGL.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
@@ -1407,8 +1426,6 @@
 				A13F5054231082FC00105DC0 /* libvorbis.a in Frameworks */,
 				769F25A61309EA14004BE875 /* libvorbisfile.a in Frameworks */,
 				A13F5052231082AE00105DC0 /* libogg.a in Frameworks */,
-				76AED5EB13FB18BC008CF47A /* libpng.a in Frameworks */,
-				168708341602A26D00346877 /* libjpeg.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1515,13 +1532,14 @@
 		29B97314FDCFA39411CA2CEA /* Quake II */ = {
 			isa = PBXGroup;
 			children = (
+				A1BEC7422315A1A700CC9E03 /* libpng12.0.dylib */,
+				A1BEC73C23159A8C00CC9E03 /* libjpeg.62.dylib */,
+				A1BEC730231489EB00CC9E03 /* baseq2 */,
 				A13F506A231095DE00105DC0 /* libtier0_s.dylib */,
 				A13F5053231082FC00105DC0 /* libvorbis.a */,
 				A13F5051231082AE00105DC0 /* libogg.a */,
 				A13F504F23107DAE00105DC0 /* steamclient.dylib */,
 				A13F504D23107DA300105DC0 /* libsteam_api.dylib */,
-				76AED5EA13FB18BC008CF47A /* libpng.a */,
-				76AFFDED130F4120007D6E39 /* libjpeg.a */,
 				769F25A31309EA13004BE875 /* libvorbisfile.a */,
 				080E96DDFE201D6D7F000001 /* Sourcecode */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -1557,6 +1575,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1BEC7362315762000CC9E03 /* libjpeg.9.dylib */,
 				A13F50552310831D00105DC0 /* libz.tbd */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
@@ -2786,6 +2805,7 @@
 				D22A795909F3CF5500FC9B21 /* CopyFiles */,
 				D22A797D09F3CF7400FC9B21 /* CopyFiles */,
 				DA3B05B6165093BD00046B18 /* CopyFiles */,
+				A1BEC74123159AB700CC9E03 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -2945,6 +2965,7 @@
 				D22A7A8909F3DBBE00FC9B21 /* GrowBox.tiff in Resources */,
 				76FFF1E612AEE64900C73834 /* q2mp1.icns in Resources */,
 				76FFF1E712AEE64900C73834 /* q2mp2.icns in Resources */,
+				A1BEC731231489EB00CC9E03 /* baseq2 in Resources */,
 				76FFF1F512AEE6AD00C73834 /* startup2.tiff in Resources */,
 				76A970BF12B2D72400489E62 /* kmq2.icns in Resources */,
 			);
@@ -3741,6 +3762,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
 					"$(PROJECT_DIR)/libs",
+					/usr/local/Cellar/jpeg/9c/lib,
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/libs\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10 = "\"$(SRCROOT)/libs\"";
@@ -3803,6 +3825,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
 					"$(PROJECT_DIR)/libs",
+					/usr/local/Cellar/jpeg/9c/lib,
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../usr/local/lib\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/libs\"";

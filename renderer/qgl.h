@@ -30,6 +30,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 #if defined(__APPLE__) || (MACOSX)
 #include <OpenGL/gl.h>
+#  include <OpenGL/glext.h>
 #else
 #include <GL/gl.h>
 #endif // __APPLE__ || MACOSX
@@ -452,6 +453,16 @@ extern BOOL ( WINAPI * qwglGetDeviceGammaRamp3DFX ) ( HDC, WORD * );
 extern BOOL ( WINAPI * qwglSetDeviceGammaRamp3DFX ) ( HDC, WORD * );
 
 #endif
+
+#if defined (__APPLE__) || defined (MACOSX)
+
+extern void    qglEnableAnisotropicTexture (qboolean theState);
+extern void *    qwglGetProcAddress (char *symbol);
+extern void     (*qglPNTrianglesiATIX) (GLenum pname, GLint param);
+extern void     (*qglPNTrianglesfATIX) (GLenum pname, GLfloat param);
+extern void     (*qgl3DfxSetPaletteEXT) (GLuint *);
+
+#endif /* __APPLE__ || MACOSX */
 
 #ifdef __linux__
 

@@ -710,8 +710,8 @@ void	GLimp_CheckForARBMultiSample (void)
 
     CGLRendererInfoObj	myRendererInfo;
     CGLError			myError;
-    UInt64				myDisplayMask;
-    long				myCount,
+    CGOpenGLDisplayMask myDisplayMask;
+    GLint				myCount,
 						myIndex,
 						mySampleBuffers,
 						mySamples;
