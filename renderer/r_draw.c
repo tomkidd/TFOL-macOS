@@ -33,7 +33,7 @@ void RefreshFont (void)
 {
 	con_font->modified = false;
 
-	draw_chars = R_FindImage (va("fonts/%s.pcx", con_font->string), it_pic);
+	draw_chars = R_FindImage (va("fonts/%s.png", con_font->string), it_pic);
 	if (!draw_chars) // fall back on default font
 		draw_chars = R_FindImage ("fonts/default.pcx", it_pic);
 	if (!draw_chars) // fall back on old Q2 conchars

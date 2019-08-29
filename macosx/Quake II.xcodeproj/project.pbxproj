@@ -310,11 +310,10 @@
 		A13F50622310902900105DC0 /* miniz.c in Sources */ = {isa = PBXBuildFile; fileRef = A13F505B2310902900105DC0 /* miniz.c */; };
 		A13F50632310902900105DC0 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = A13F505C2310902900105DC0 /* unzip.c */; };
 		A13F50642310902900105DC0 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = A13F505D2310902900105DC0 /* ioapi.c */; };
+		A1AEF81323172A9100C955EB /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AEF81223172A9100C955EB /* libpng.a */; };
 		A1BEC731231489EB00CC9E03 /* baseq2 in Resources */ = {isa = PBXBuildFile; fileRef = A1BEC730231489EB00CC9E03 /* baseq2 */; };
 		A1BEC73F23159AAF00CC9E03 /* libjpeg.62.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1BEC73C23159A8C00CC9E03 /* libjpeg.62.dylib */; };
 		A1BEC74023159AB700CC9E03 /* libjpeg.62.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = A1BEC73C23159A8C00CC9E03 /* libjpeg.62.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		A1BEC7432315A1A700CC9E03 /* libpng12.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = A1BEC7422315A1A700CC9E03 /* libpng12.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		A1BEC7442315A1BA00CC9E03 /* libpng12.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1BEC7422315A1A700CC9E03 /* libpng12.0.dylib */; };
 		D22A794F09F3CF3000FC9B21 /* Quake II Help idx in CopyFiles */ = {isa = PBXBuildFile; fileRef = D22A794709F3CEFE00FC9B21 /* Quake II Help idx */; };
 		D22A795009F3CF3100FC9B21 /* Quake II Help.helpindex in CopyFiles */ = {isa = PBXBuildFile; fileRef = D22A794809F3CEFE00FC9B21 /* Quake II Help.helpindex */; };
 		D22A795109F3CF3100FC9B21 /* Quake II Help.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = D22A794909F3CEFE00FC9B21 /* Quake II Help.html */; };
@@ -544,7 +543,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				A1BEC74023159AB700CC9E03 /* libjpeg.62.dylib in Embed Libraries */,
-				A1BEC7432315A1A700CC9E03 /* libpng12.0.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1168,10 +1166,10 @@
 		A13F50602310902900105DC0 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
 		A13F50612310902900105DC0 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
 		A13F506A231095DE00105DC0 /* libtier0_s.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtier0_s.dylib; path = libs/libtier0_s.dylib; sourceTree = "<group>"; };
+		A1AEF81223172A9100C955EB /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = libs/libpng.a; sourceTree = "<group>"; };
 		A1BEC730231489EB00CC9E03 /* baseq2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = baseq2; path = ../../../Dropbox/Files/quake2/tfol/baseq2; sourceTree = "<group>"; };
 		A1BEC7362315762000CC9E03 /* libjpeg.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjpeg.9.dylib; path = ../../../../../usr/local/Cellar/jpeg/9c/lib/libjpeg.9.dylib; sourceTree = "<group>"; };
 		A1BEC73C23159A8C00CC9E03 /* libjpeg.62.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjpeg.62.dylib; path = libs/libjpeg.62.dylib; sourceTree = "<group>"; };
-		A1BEC7422315A1A700CC9E03 /* libpng12.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng12.0.dylib; path = libs/libpng12.0.dylib; sourceTree = "<group>"; };
 		D22A791A09F3CEFE00FC9B21 /* q2toc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = q2toc.jpg; sourceTree = "<group>"; };
 		D22A791B09F3CEFE00FC9B21 /* quake2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = quake2.gif; sourceTree = "<group>"; };
 		D22A791C09F3CEFE00FC9B21 /* spacer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spacer.gif; sourceTree = "<group>"; };
@@ -1415,7 +1413,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1BEC7442315A1BA00CC9E03 /* libpng12.0.dylib in Frameworks */,
+				A1AEF81323172A9100C955EB /* libpng.a in Frameworks */,
 				A1BEC73F23159AAF00CC9E03 /* libjpeg.62.dylib in Frameworks */,
 				A13F505923108F2700105DC0 /* libz.tbd in Frameworks */,
 				76FFF18112AEE24B00C73834 /* OpenGL.framework in Frameworks */,
@@ -1532,7 +1530,6 @@
 		29B97314FDCFA39411CA2CEA /* Quake II */ = {
 			isa = PBXGroup;
 			children = (
-				A1BEC7422315A1A700CC9E03 /* libpng12.0.dylib */,
 				A1BEC73C23159A8C00CC9E03 /* libjpeg.62.dylib */,
 				A1BEC730231489EB00CC9E03 /* baseq2 */,
 				A13F506A231095DE00105DC0 /* libtier0_s.dylib */,
@@ -1575,6 +1572,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1AEF81223172A9100C955EB /* libpng.a */,
 				A1BEC7362315762000CC9E03 /* libjpeg.9.dylib */,
 				A13F50552310831D00105DC0 /* libz.tbd */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
@@ -2101,7 +2099,6 @@
 		76FFF1C412AEE4F400C73834 /* Renderer */ = {
 			isa = PBXGroup;
 			children = (
-				1687081D16029C9D00346877 /* r_surf.c */,
 				D238713809E1A42B00C1E540 /* Headers */,
 				D238713709E1A42600C1E540 /* MacOS X */,
 				76AFFCF9130F3921007D6E39 /* r_alias_misc.c */,
@@ -2122,6 +2119,7 @@
 				76AFFD09130F3921007D6E39 /* r_particle.c */,
 				76AFFD0A130F3921007D6E39 /* r_sky.c */,
 				76AFFD0B130F3921007D6E39 /* r_sprite.c */,
+				1687081D16029C9D00346877 /* r_surf.c */,
 				76AFFD0D130F3921007D6E39 /* r_vlights.c */,
 				76AFFD0E130F3921007D6E39 /* r_warp.c */,
 			);
@@ -3882,6 +3880,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				ONLY_ACTIVE_ARCH = YES;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
@@ -3921,6 +3920,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";

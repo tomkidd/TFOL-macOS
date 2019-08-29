@@ -26,6 +26,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 //#include "r_cin.h"
 #include "include/jpeglib.h"
 #include "include/zlibpng/png.h"
+//#include <png.h>
 
 image_t		gltextures[MAX_GLTEXTURES];
 int			numgltextures;
@@ -1119,6 +1120,8 @@ void R_LoadPNG (char *filename, byte **pic, int *width, int *height)
 
 	*pic = NULL;
 
+    VID_Printf (PRINT_DEVELOPER, "R_LoadPNG %s\n", filename);
+
 	len = FS_LoadFile (filename, (void **)&raw);
 
 	if (!raw)
@@ -2009,7 +2012,9 @@ Nexus  - changes for hires-textures
 */
 image_t *R_LoadPic (char *name, byte *pic, int width, int height, imagetype_t type, int bits)
 {
-	image_t		*image;
+    VID_Printf (PRINT_DEVELOPER, "R_LoadPic %s\n", name);
+
+    image_t		*image;
 	int			i;
 	//Nexus'added vars
 	int len; 

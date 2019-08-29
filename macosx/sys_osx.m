@@ -374,7 +374,8 @@ void	Sys_ConsoleOutput (char *theString)
     fflush (stdout);
 
 #else /* DEDICATED_ONLY */
-	[[NSApp delegate] OutputToConsole: theString];
+    //    [[NSApp delegate] @"%@", Ou%sutToConsole: theString];
+    NSLog(@"%s", theString);
 #endif /* DEDICATED_ONLY */
 }
 
