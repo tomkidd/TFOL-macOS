@@ -1146,6 +1146,7 @@
 		76FFF25C12AEEE3A00C73834 /* g_mmove_decs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = g_mmove_decs.h; path = ../game/g_mmove_decs.h; sourceTree = SOURCE_ROOT; };
 		76FFF25D12AEEE3A00C73834 /* g_mmove_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = g_mmove_list.h; path = ../game/g_mmove_list.h; sourceTree = SOURCE_ROOT; };
 		8D1107320486CEB800E47090 /* KMQuake II.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KMQuake II.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A13E1D0623274F890000D984 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = libs/libjpeg.a; sourceTree = "<group>"; };
 		A13F50462310759100105DC0 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
 		A13F50472310759900105DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Base.lproj/Controller.nib; sourceTree = "<group>"; };
 		A13F50482310759E00105DC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
@@ -1168,7 +1169,6 @@
 		A13F506A231095DE00105DC0 /* libtier0_s.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtier0_s.dylib; path = libs/libtier0_s.dylib; sourceTree = "<group>"; };
 		A1AEF81223172A9100C955EB /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = libs/libpng.a; sourceTree = "<group>"; };
 		A1BEC730231489EB00CC9E03 /* baseq2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = baseq2; path = ../../../Dropbox/Files/quake2/tfol/baseq2; sourceTree = "<group>"; };
-		A1BEC7362315762000CC9E03 /* libjpeg.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjpeg.9.dylib; path = ../../../../../usr/local/Cellar/jpeg/9c/lib/libjpeg.9.dylib; sourceTree = "<group>"; };
 		A1BEC73C23159A8C00CC9E03 /* libjpeg.62.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjpeg.62.dylib; path = libs/libjpeg.62.dylib; sourceTree = "<group>"; };
 		D22A791A09F3CEFE00FC9B21 /* q2toc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = q2toc.jpg; sourceTree = "<group>"; };
 		D22A791B09F3CEFE00FC9B21 /* quake2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = quake2.gif; sourceTree = "<group>"; };
@@ -1530,14 +1530,7 @@
 		29B97314FDCFA39411CA2CEA /* Quake II */ = {
 			isa = PBXGroup;
 			children = (
-				A1BEC73C23159A8C00CC9E03 /* libjpeg.62.dylib */,
 				A1BEC730231489EB00CC9E03 /* baseq2 */,
-				A13F506A231095DE00105DC0 /* libtier0_s.dylib */,
-				A13F5053231082FC00105DC0 /* libvorbis.a */,
-				A13F5051231082AE00105DC0 /* libogg.a */,
-				A13F504F23107DAE00105DC0 /* steamclient.dylib */,
-				A13F504D23107DA300105DC0 /* libsteam_api.dylib */,
-				769F25A31309EA13004BE875 /* libvorbisfile.a */,
 				080E96DDFE201D6D7F000001 /* Sourcecode */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -1572,11 +1565,18 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A13E1D0623274F890000D984 /* libjpeg.a */,
+				A1BEC73C23159A8C00CC9E03 /* libjpeg.62.dylib */,
+				A13F5051231082AE00105DC0 /* libogg.a */,
 				A1AEF81223172A9100C955EB /* libpng.a */,
-				A1BEC7362315762000CC9E03 /* libjpeg.9.dylib */,
+				A13F504D23107DA300105DC0 /* libsteam_api.dylib */,
+				A13F506A231095DE00105DC0 /* libtier0_s.dylib */,
+				A13F5053231082FC00105DC0 /* libvorbis.a */,
+				769F25A31309EA13004BE875 /* libvorbisfile.a */,
 				A13F50552310831D00105DC0 /* libz.tbd */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+				A13F504F23107DAE00105DC0 /* steamclient.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
