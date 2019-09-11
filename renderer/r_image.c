@@ -1120,7 +1120,6 @@ void R_LoadPNG (char *filename, byte **pic, int *width, int *height)
 
 	*pic = NULL;
 
-    VID_Printf (PRINT_DEVELOPER, "R_LoadPNG %s\n", filename);
 
 	len = FS_LoadFile (filename, (void **)&raw);
 
@@ -2012,7 +2011,6 @@ Nexus  - changes for hires-textures
 */
 image_t *R_LoadPic (char *name, byte *pic, int width, int height, imagetype_t type, int bits)
 {
-    VID_Printf (PRINT_DEVELOPER, "R_LoadPic %s\n", name);
 
     image_t		*image;
 	int			i;
