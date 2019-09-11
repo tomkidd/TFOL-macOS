@@ -1,4 +1,4 @@
-#Thirty Flights of Loving for macOS
+# Thirty Flights of Loving for macOS
 
 This repo contains the source code for the game *Thirty Flights of Loving* for the Mac by [Blendo Games](http://blendogames.com/). The predecessor game *Gravity Bone* is also playable via a menu option.
 
