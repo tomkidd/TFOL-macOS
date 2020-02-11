@@ -211,7 +211,8 @@
 		CGPostKeyboardEvent ((CGCharCode) 0, (CGKeyCode) 4, NO);	// H
 	}
 	
-	[self installFrameTimer];
+    // initializing this here seems redundant and is srewing up the mouse on a resign/become active thing -tkidd
+    // [self installFrameTimer];
 }
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------------
