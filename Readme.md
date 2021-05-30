@@ -1,3 +1,8 @@
+<hr>
+<img align="left" width="50" height="50" src="https://schnapple.com/wp-content/uploads/2021/05/m1_small.jpg">
+I'm trying to fund an M1 Mac to keep old games running on new Macs. If you'd like to help you can contribute here: https://ko-fi.com/schnapple
+<hr>
+
 # Thirty Flights of Loving for macOS
 
 This repo contains the source code for the game [*Thirty Flights of Loving*](http://blendogames.com/thirtyflightsofloving/) for the Mac by [Blendo Games](http://blendogames.com/). The predecessor game [*Gravity Bone*](http://blendogames.com/older.htm#gravitybone) is also playable via a menu option.
